@@ -1,0 +1,17 @@
+### Model
+model_name: bert-base-cased
+dropout: 0
+hidden_dim: 768
+
+### Data
+data_path: [datasets/NER_data/conll2003]
+
+### Training
+batch_size: 16
+lr: 1e-3
+info_per_epochs: 1
+training_epochs: 10
+schedule: (3, 6)
+gamma: 0.2
+early_stop: 3
+evaluate_interval: 1
